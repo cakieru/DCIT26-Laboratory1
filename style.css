@@ -158,6 +158,36 @@ main {
     color: #5d8190;
 }
 
+/* Dislikes */
+.dislikes-card {
+    background-color: #fff5f8;
+    border: 3px solid #f7c6d9;
+}
+
+.dislikes-card h2 {
+    color: #e58eae;
+}
+
+.dislikes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.dislikes div {
+    background-color: #fce4ed;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    color: #9b6378;
+    font-weight: bold;
+}
+
+.dislikes div:hover {
+    background-color: #e4f6fd;
+    color: #568da4;
+}
+
 /* Footer */
 footer {
     text-align: center;
