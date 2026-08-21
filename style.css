@@ -1,0 +1,195 @@
+/* General Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7ff;
+    color: #526b7a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #bde7f7;
+    padding: 45px 20px;
+    border-bottom: 5px solid #f7b6d2;
+}
+
+header h1 {
+    color: #4d8ba8;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6c8090;
+    font-size: 17px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(100, 150, 170, 0.15);
+}
+
+nav a {
+    text-decoration: none;
+    color: #5b9bb5;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #e88eae;
+}
+
+/* Main */
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: 3px solid #d2eff9;
+    box-shadow: 0 5px 15px rgba(100, 170, 200, 0.15);
+}
+
+.card h2 {
+    color: #e58eae;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* About Me */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    background-color: #c5eafa;
+    border: 6px solid #f7b6d2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture span {
+    font-size: 55px;
+    color: #e58eae;
+}
+
+.about-content p {
+    margin: 7px 0;
+}
+
+/* Likes */
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.list div {
+    background-color: #e4f6fd;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    color: #568da4;
+    font-weight: bold;
+}
+
+.list div:hover {
+    background-color: #fde1eb;
+}
+
+/* Hobbies */
+.card ul {
+    list-style: none;
+    text-align: center;
+}
+
+.card li {
+    background-color: #fdf0f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Favorites */
+.favorites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.favorite-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #e7f7fd;
+    border-radius: 15px;
+}
+
+.favorite-box h3 {
+    color: #e58eae;
+    margin-bottom: 5px;
+}
+
+.favorite-box p {
+    color: #5d8190;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #bde7f7;
+    color: #527d8f;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .list,
+    .favorites {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 92%;
+    }
+}
